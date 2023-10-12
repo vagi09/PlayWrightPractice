@@ -5,6 +5,7 @@ export class HomePage {
     readonly page: Page;
     // readonly WebPagetitle: Locator
     readonly CompCategory: Locator;
+    readonly 
 
 
     constructor(page: Page) {
@@ -15,7 +16,7 @@ export class HomePage {
 
     async goto() {
 
-        await this.page.goto('https://demo.nopcommerce.com/');
+        await this.page.goto('');
 
     };
 
