@@ -20,6 +20,7 @@ export class LoginPage {
     readonly Email: Locator;
     readonly Password: Locator;
     readonly LoginBtn: Locator;
+    readonly UnSuccessfulLoginMsg: Locator;
 
     constructor(page: Page) {
 
@@ -28,6 +29,7 @@ export class LoginPage {
         this.Email = page.locator('#Email');
         this.Password = page.locator('#Password');
         this.LoginBtn = page.locator('button[class="button-1 login-button"]');
+        this.UnSuccessfulLoginMsg = page.locator('div[class="message-error validation-summary-errors"]');
 
 
     };
@@ -60,6 +62,13 @@ export class LoginPage {
         await this.LoginBtn.click();
         // await expect(this.LoginBtn).toBeVisible();
         
+    };
+
+    async LoginErrorMsg(){
+
+       return await this.UnSuccessfulLoginMsg.innerText();
+        
+
     };
 
 };
