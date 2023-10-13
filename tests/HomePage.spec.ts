@@ -40,8 +40,7 @@ export class HomePage {
             const element = this.categoriesLocators[category];
             if (element) {
                 // Wait for the element to be visible, enabled, and stable
-                await element.nth(0).waitFor({ state: 'visible',  });
-
+                await element.nth(0).waitFor({ state: 'visible', });
                 // Click the element
                 await element.nth(0).click();
             } else {

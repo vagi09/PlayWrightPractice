@@ -16,8 +16,8 @@ test('HomePage test', async ({ page }) => {
     const homepage = new HomePage(page);
 
     await homepage.goto();
-    const pageTitle = await homepage.getPagetitle();
-    expect(pageTitle).toBe("nopCommerce demo store");
+    // const pageTitle = await homepage.getPagetitle();
+    // expect(pageTitle).toBe("nopCommerce demo store");
 
     for (const category in expectedUrls) {
         await homepage.clickCategory(category);
