@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Oct 23 15:27:13 IST 2023","Mon Oct 23 15:27:23 IST 2023","10221","chromium","dummyTest.spec.ts","","","","testing with student",""
+"passed","Mon Oct 23 15:27:13 IST 2023","Mon Oct 23 15:27:22 IST 2023","8973","chromium","dummyTest.spec.ts","","","","testing with student1",""
+"passed","Mon Oct 23 15:27:13 IST 2023","Mon Oct 23 15:27:21 IST 2023","8362","chromium","dummyTest.spec.ts","","","","testing with student2",""
