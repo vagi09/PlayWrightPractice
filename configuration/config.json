@@ -1,0 +1,13 @@
+{
+    "testEnvironment": {
+      "url": "https://parabank.parasoft.com/parabank/index.htm",
+      "username": "test",
+      "password": "test"
+    },
+    "prodEnvironment": {
+      "url": "https://parabank.parasoft.com/parabank/index.htm",
+      "username": "test",
+      "password": "test"
+    }
+  }
+  

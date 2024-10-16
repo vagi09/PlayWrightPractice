@@ -1,0 +1,12 @@
+PlaywrightPractice (workspace)
+│
+├── configuration (folder)
+│   ├── config.json
+│   └── Configuration.js
+│
+├── PageModels
+│   └── HomePage.js
+│
+└── tests
+    └── testCases
+        └── homepage.spec.js
