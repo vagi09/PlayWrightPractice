@@ -1,5 +1,6 @@
 // @ts-check
 const { defineConfig, devices } = require('@playwright/test');
+require('dotenv').config();
 
 /**
  * Read environment variables from file.
@@ -21,9 +22,21 @@ module.exports = defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [
+
+    ['html', { open: 'never' }], // Configure HTML reporter
+
+
+    // 'html',
+
+    // ['list'], // Default reporter
+    // ['allure-playwright'] // Add Allure reporter
+
+  ],
+  
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
+    apiKey: process.env.OPENAI_API_KEY,
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
 
@@ -35,7 +48,10 @@ module.exports = defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: { ...devices['Desktop Chrome'],
+        headless: false,
+
+       },
     },
 
     // {

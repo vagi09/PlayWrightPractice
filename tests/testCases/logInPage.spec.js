@@ -23,6 +23,7 @@ test.describe("LogInPage", async () => {
     await loginPage.logInButton().click();
 
     await loginPage.page.waitForTimeout(2_000);
+  
 
     
   });

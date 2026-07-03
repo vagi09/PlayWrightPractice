@@ -12,7 +12,7 @@ test("dropdow", async ({ page }) => {
 
   const options = await page.$$eval('select option', elements =>
       elements.map(option => ({
-        // value: option.value,
+        // value: option.value, 
         text: option.textContent.trim()
       }))
     );

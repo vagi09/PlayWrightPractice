@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "cli": "npx playwright-cli-select run --specs",
     "test": "npx playwright test"
   },
   "keywords": [],
@@ -10,10 +11,18 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.47.1",
-    "@types/node": "^22.5.5"
+    "@playwright/test": "^1.51.0",
+    "@types/node": "^22.5.5",
+    "@zerostep/playwright": "^0.1.5",
+    "allure-commandline": "^2.32.0",
+    "allure-playwright": "^3.0.8",
+    "playwright-cli-select": "^1.0.6"
   },
   "dependencies": {
-    "dotenv": "^16.4.5"
+    "@ai-sdk/deepseek": "^0.1.10",
+    "@google/generative-ai": "^0.21.0",
+    "ai": "^4.1.41",
+    "dotenv": "^16.4.7",
+    "openai": "^4.73.1"
   }
 }
