@@ -49,7 +49,7 @@ module.exports = defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'],
-        headless: !!process.env.CI, // Run in headless mode on CI, headed mode locally
+        headless: !!process.env.CI, 
 
        },
     },
